@@ -1,0 +1,76 @@
+/* Scroll */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+	background: #fff;
+	width: 8px;
+	height: 8px;
+}
+body::-webkit-scrollbar-thumb {
+	background: #1d96f3 !important;
+}
+body {
+	overflow-x: hidden;
+}
+
+/* ----- */
+
+/* screenUp */
+
+.screenUp {
+	display: none;
+	padding: 1px 10px;
+	background: #1d96f3;
+	font-size: 28px;
+	color: #fff;
+	cursor: pointer;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 2;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	border-radius: 40px;
+}
+
+/* -------- */
+
+/* saveButton */
+
+.saveButton {
+	position: fixed;
+	bottom: 10px;
+	z-index: 2;
+}
+
+/* SideBar */
+
+#sideBar {
+	position: fixed;
+	width: 240px;
+	height: 100%;
+	left: -240px;
+	transition: all 200ms linear;
+	z-index: 1000;
+	overflow-x: hidden;
+}
+
+#sideBar.active {
+	left: 0;
+}
+
+/* ------- */
+
+/* Centrado */
+
+.abs-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+/* ------- */

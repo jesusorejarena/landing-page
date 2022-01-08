@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Registrarse</title>
+		<link rel="shortcut icon" href="" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/fontawesome-free/css/all.min.css" />
+		<link rel="stylesheet" href="./css/estilos.css" />
+		<script src="./js/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- Comienza el nav -->
+
+		<div class="container-fluid px-4 px-xl-5 mb-5">
+			<div class="row">
+				<div class="col-12">
+					<div id="section1" class="container bg-light shadow-lg my-3 px-4 py-5 my-xl-3 px-xl-5 py-xl-5">
+						<div class="row">
+							<div class="d-none d-xl-flex col-xl-6 align-items-center">
+								<img class="img-fluid" src="./img/undraw_career_progress_ivdb.svg" alt="Fasty" width="100%" />
+							</div>
+							<div class="col-12 col-xl-6">
+								<div class="row my-4">
+									<div class="col-12">
+										<h1 class="text-center text-primary font-weight-bold">Registrate</h1>
+									</div>
+								</div>
+								<div class="row my-3">
+									<div class="col-12 px-5">
+										<form method="POST" class="was-validation" id="formulario" novalidate>
+											<div class="row">
+												<div class="col-12 col-xl-6">
+													<div class="form-group">
+														<label for="nombre">Nombre(s):</label>
+														<input
+															id="nombre"
+															class="form-control"
+															type="text"
+															name="nom_usu"
+															placeholder="Nombre(s)"
+														/>
+														<small id="nombreDiv" class="invalid-feedback"></small>
+													</div>
+												</div>
+												<div class="col-12 col-xl-6">
+													<div class="form-group">
+														<label for="apellido">Apellido(s):</label>
+														<input
+															id="apellido"
+															class="form-control"
+															type="text"
+															name="ape_usu"
+															placeholder="Apellido(s)"
+														/>
+														<small id="apellidoDiv" class="invalid-feedback"></small>
+													</div>
+												</div>
+												<div class="col-12 col-xl-6">
+													<div class="form-group">
+														<label for="cedula">Cédula:</label>
+														<input id="cedula" class="form-control" type="text" name="ced_usu" placeholder="Cédula" />
+														<small id="cedulaDiv" class="invalid-feedback"></small>
+													</div>
+												</div>
+												<div class="col-12 col-xl-6">
+													<div class="form-group">
+														<label for="telefono">Teléfono:</label>
+														<input
+															id="telefono"
+															class="form-control"
+															type="text"
+															name="tel_usu"
+															placeholder="Teléfono"
+														/>
+														<small id="telefonoDiv" class="invalid-feedback"></small>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="form-group">
+														<label for="nacimiento">Fecha de nacimiento:</label>
+														<input id="nacimiento" class="form-control" max="" type="date" name="nac_usu" />
+														<small id="nacimientoDiv" class="invalid-feedback"></small>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="form-group">
+														<label for="correo_repart">Correo electronico:</label>
+														<input type="email" name="cor_usu" id="correo" class="form-control" placeholder="Correo" />
+														<small id="correoDiv" class="invalid-feedback"></small>
+													</div>
+												</div>
+												<div class="col-12 col-xl-6">
+													<div class="form-group">
+														<label for="contra_repart">Ingrese una contraseña:</label>
+														<div class="input-group mb-3">
+															<input
+																type="password"
+																name="cla_usu"
+																id="contrasena"
+																class="form-control"
+																placeholder="Contraseña"
+															/>
+															<div class="input-group-append">
+																<button class="btn btn-outline-primary" type="button" id="ShowPassword">
+																	<i id="iconEye" class="fas fa-eye"></i>
+																</button>
+															</div>
+															<small id="contrasenaDiv" class="invalid-feedback"></small>
+														</div>
+													</div>
+												</div>
+												<div class="col-12 col-xl-6">
+													<div class="form-group">
+														<label for="repetirContrasena">Repita la contraseña:</label>
+														<input
+															type="password"
+															id="repetirContrasena"
+															class="form-control"
+															placeholder="Repetir contraseña"
+														/>
+														<small id="repetirContrasenaDiv" class="invalid-feedback"></small>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="alert alert-success">
+														<b>La contraseña debe de cumplir con estos requisitos minimos:</b>
+														<br />
+														- Debe de tener entre 8-20 caracteres.
+														<br />
+														- Un carácter en mayúscula.
+														<br />
+														- Un carácter en miniscula.
+														<br />
+														- Un carácter especial. Permitidos <strong>.*/#$%&amp;¡!_\-,@:;?¿</strong>
+														<br />
+														- Al menos un digito.
+													</div>
+												</div>
+											</div>
+											<div class="row justify-content-end">
+												<div class="col-12">
+													<small class="form-text text-right text-muted"
+														>¿Ya tienes cuenta? <a href="login.html">Ingresa ahora</a>.</small
+													>
+												</div>
+											</div>
+											<div class="pt-4 text-center">
+												<button class="btn btn-outline-primary" name="run" value="createClient">Registrarse</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Termina el body -->
+
+		<!-- Comienza onda -->
+
+		<div class="mt-2" style="height: 150px; overflow: hidden">
+			<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%">
+				<path
+					d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+					style="stroke: none; fill: #f8f9fa"
+				></path>
+			</svg>
+		</div>
+
+		<!-- Comienza footer -->
+
+		<footer class="bg-light">
+			<div class="container-fluid px-4 px-xl-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-xl-3 text-center">
+							<img class="img-fluid" src="./img/Logo-Cuadrado.png" alt="Logo" width="200rm" />
+						</div>
+						<div class="col-12 col-xl-3 text-left my-2">
+							<h6><a class="text-dark" href="index.html#section1">Inicio</a></h6>
+							<h6><a class="text-dark" href="index.html#section2">Misión y Visión</a></h6>
+							<h6><a class="text-dark" href="index.html#section3">Testimonios</a></h6>
+							<h6><a class="text-dark" href="index.html#section4">Historia</a></h6>
+							<h6><a class="text-dark" href="index.html#section5">Ubicación</a></h6>
+							<h6><a class="text-dark" href="index.html#section6">Contacto</a></h6>
+							<h6><a class="text-dark" href="signup.hmtl">Registrarse</a></h6>
+							<h6><a class="text-dark" href="login.html">Ingresar</a></h6>
+						</div>
+						<div class="col-12 col-xl-3 text-left my-2">
+							<h6 class="text-dark"><b>Dirección: </b></h6>
+							<h6 class="text-dark">La Concordia</h6>
+							<h6 class="text-dark"><b>E-mail: </b></h6>
+							<h6 class="text-dark">rosedaldrycleaning@gmail.com</h6>
+							<h6 class="text-dark"><b>Teléfono: </b></h6>
+							<h6 class="text-dark">0276-3477705</h6>
+						</div>
+						<div class="col-12 col-xl-3 text-left my-2">
+							<h6 class="text-dark"><b>Horario</b></h6>
+							<h6 class="text-dark">08:00 AM - 12:00 PM</h6>
+							<h6 class="text-dark">02:00 PM - 06:00 PM</h6>
+						</div>
+					</div>
+					<div class="row mt-4">
+						<div class="col-12 text-center">
+							<a class="text-dark" href="#"><i class="fab fa-twitter imd"></i></a>
+							<a class="text-dark" href="#"><i class="fab fa-instagram imd"></i></a>
+							<a class="text-dark" href="#"><i class="fab fa-youtube imd"></i></a>
+							<a class="text-dark" href="#"><i class="fab fa-linkedin imd"></i></a>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col-12 text-center">
+							<p class="text-dark">Rosedal Dry Cleaning</p>
+							<p class="text-dark">J-30161557-3</p>
+						</div>
+						<div class="col-12 text-center">
+							<p class="text-dark">Una aplicacion hecha con <i class="fas fa-heart ism"></i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Termina footer -->
+
+		<script src="./js/validaciones.js"></script>
+		<script src="./css/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="./js/screenUp.js"></script>
+		<script src="./js/showPassword.js"></script>
+	</body>
+</html>
